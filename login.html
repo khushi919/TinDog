@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/login.css">
+  <title>TinDog</title>
+</head>
+<body class="gradient-background">
+  <div class="container">
+    
+    <form id="form-container" style="background-color: white;">
+        <p style="font-weight: bolder; font-size: 20px; text-align: center; color: rgb(15, 80, 136);">Login into your Account&#128054;</p>
+        <label for="username">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        <br>
+        <div class="form-group">
+            <label for="exampleInputPassword1" style="margin-top: 7px;">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <a href="" style="font-size: small;">forgot password?</a>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Remember me</label>
+          </div>
+          <br>
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <p style="font-size: large;font-weight: 500;text-align: center;">OR <br>Login with Gmail</p>
+          
+          <div id="mail">
+          <a href="https://mail.google.com/" class="gmail-link" target="_blank" style="height: 30px; width: 100px; color: black; text-decoration: none;margin-left: 130px; ">
+         
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAA+VBMVEX////rRDVVfb8yqVPGJSf7vBJRer4rp099mcxnu3tpu33qOjb7vhHOLCr3oh5LdrwhpUi6yOOv2bnrQTHrPS3qNCHFHR/qOij2ubXRX2DwgXn8yVfqLxnCAAD7twD85uX61NH0oZv+9/bsTkBLgcbuamDLHhiztDMUqFZbebh4aZ2bUHThuR/+7MrDCw/7vyX94662N0h2rkXn7PX57OzotLTotbX/+e794abflpfJNTf93Jvag4PflZX92Y/81Hz+9eHsw8PVcHH8zmj+6cDOT1D8xUTILzG0dozKxGXtV0vbnSTpHgCYrtWIyJfj8ubJ1Oiu2bjB4cjnon0jAAAElUlEQVR4nO2caVfTQBhGk7ZQcaNAaRGbUitSXCgom6CigLui6P//MSbpwiSZrc2804znuZ85fc49czNpv+B5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwX3Bwfnh41DmwtHa8s/d6b+fY0lrIwclpEPT7/SA4PemSrx2/2W0P2D2zI9l9G/QrQxr94B3x3Fm7PTei3X5PvBbRaWxVWPqnG4RrH3Zv/AaOO4RrMUdBJUUjOCRb20v6xY57ZGsx5xnBkOCCaO0yKxgqfiRaizngCVYqW18oSk0XOlakvG8+NbiGJKVyCh3y2fjWGG6jRKVyCx0eIt1t80BwhOZLFRVKfIiCp3Bc6pqxpbX7dyWCdE/iUV9mWLnXWjc0tN5SGFJdp++25IZ+87GJUjceN+8oDM8MzPC4kDyGsaG/0spf6lprxVcZXhqw4SG7aAaGvp+71PVW+CkKw7mHRnyy6BjmLDUs1C+6Ya5So0KLb5ij1LhQFwynLHVYqBOGU5U6KtQNwylKHRfqiuGEpTKFOmM4Ualsoe4YTlBqolCXDDVLTRXqlKFWqelC3TLUKDVT6CwNv0p/AfMNFaVyCtUwbH8jMrz1rCE7Rb6htFReoUrD9tyrBSrDzacvJT+CBYaSUrmFKg1flKtkhvOlzefiUoWGglIFhaoMe9ukhqVNcaliQ26pokKlhmGh22Vaw5K4VIkhp1RhoVLDF+VQkNiwJCxVapgqVVKozLAX+dEbikqVGyZKlRUqNBwUasVQUKrCkClVWqjQcFCoHUN+qUrDYamKQkWGvZGfHUNeqWrDuFRVoQLDVzeCdgw5pWoY+v7q91WNv8oY3hRqzzBbqpahrz5AjmGP9bNnmC5Vz1CLhGE7UahVw1SpVIbJQu0aJkslMuyl/ewasqVSGGYLtW7IlEphmC3UvmFU6haVIafQWRiOSjVvyCt0JobDUk0b8gudjeHgTjVsKCh0VoZxqUYNRYXOzDAqVecbpx7NH1WJ4IwMS/O3Hmn8atBhpfVooSoRnJ2h16nXDQjW6x3vdkENve6T/KWuPul6xTX0vLylhoVGH1NgQ6/TzFNqvdnxim6Yq9S40MIbTl/qsFAHDKe8U6M71BXDqUodF+qE4eSlMoU6YjjhnTq6Q10ynKjURKHOGOqXmirUIUPNUtOFumSoVWqmUKcM1aVyCnXMUPH2Z9/yrhpKS+UW6pyhuFRBoRGOGQpKFRUa4Zoht1RhoRHOGWZLlRQa4aBh6u3Pe8uzuGiYKFVaaISThjelKgqNcNRweKfK7tARrhrGpSoLjXDWMCz1p7LQCIcNPb3/+OKyoR4wNDjFAkODUzA0OMUCQ4NTMDQ4xQJDg1MwNDjFAkODUzA0OMUCQ4NTCsPbBqdYrgpj+MvgFMvSYkEMa8sGpxIUxtDgUpIrmaI9wxpVpCElyZNozbBaNTiUZn9RrGjLsFr7bXAow35JGKolw1qZVDBkqbQowKThQk1AmewaZdi/XuJybXDj759lHn+pzw8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACzwD6Z5wW/7P+6JAAAAAElFTkSuQmCC"
+            alt="Gmail Logo" style="border-radius: 70%; width: 50px; padding-top: 5px;">
+            Gmail
+        </a>
+        </div>
+        <p style="text-align: center; margin-top: 5px;">Don't have an account? <a href="signup.html">Sign-Up</a></p>
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+
+
