@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    border: 2px solid #333; /* Change this to the desired border color */
+    padding: 50px;
+    width: 400px; /* Adjust the width as needed */
+    box-sizing: border-box;
+}
+
+/* Optional: Style the form elements */
+form input,
+form button {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#mail{
+    width: 175px;
+    text-align: center;
+}
+.gmail-link {
+    display: inline-block;
+}
+
+.gmail-link img {
+    width: 20px; /* Adjust the logo size as needed */
+    margin-right: 5px; /* Adjust the right margin as needed */
+    vertical-align: middle;
+}
+.gradient-background {
+    background: linear-gradient(300deg,#94bbe9 , #eeaeca);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  .container {
+    position: relative;
+}
+#form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
